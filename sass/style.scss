@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 16px;
+  background-color: #ffffff;
+  font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
