@@ -13,7 +13,9 @@ body {
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -61,6 +63,13 @@ a {
 
 .header__nav {
   margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
 }
 
 .header__ul {
@@ -72,4 +81,23 @@ a {
   margin-left: 40px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.sp-btn > span {
+  display: block;
+  background: #333333;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 8px;
+  transition: transform 0.5s;
+}
+
+.sp-btn > span:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sp-btn {
+    display: none;
+  }
 }

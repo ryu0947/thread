@@ -1,6 +1,18 @@
 $cBlack: #333333;
 $cWhite: #ffffff;
 
+@mixin sp($tblet-Width: 480px) {
+  @media screen and (min-width: $sp-Width) {
+    @content;
+  }
+}
+
+@mixin pc($pc-Width: 768px) {
+  @media screen and (min-width: $pc-Width) {
+    @content;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +28,9 @@ body {
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -63,6 +77,10 @@ a {
 
   &__nav {
     margin-left: auto;
+    display: none;
+    @include pc {
+      display: block;
+    }
   }
 
   &__ul {
@@ -74,5 +92,24 @@ a {
     margin-left: 40px;
     font-size: 20px;
     cursor: pointer;
+  }
+}
+
+.sp-btn {
+  & > span {
+    display: block;
+    background: $cBlack;
+    width: 35px;
+    height: 3px;
+    margin-bottom: 8px;
+    transition: transform 0.5s;
+  }
+
+  & > span:last-child {
+    margin-bottom: 0;
+  }
+
+  @include pc {
+    display: none;
   }
 }
