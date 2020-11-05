@@ -9,18 +9,19 @@ body {
   padding: 0;
   color: #333333;
   font-size: 16px;
+  letter-spacing: 0.1em;
   background-color: #ffffff;
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 h1,
 h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -33,8 +34,6 @@ img {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -78,14 +77,19 @@ a {
 }
 
 .header__li {
-  margin-left: 40px;
+  margin-left: 48px;
   font-size: 20px;
   cursor: pointer;
 }
 
+.header__li a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .sp-btn > span {
   display: block;
-  background: #333333;
+  background: #ffffff;
   width: 35px;
   height: 3px;
   margin-bottom: 8px;
@@ -103,6 +107,7 @@ a {
 }
 
 .sp-menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -134,5 +139,44 @@ a {
 @media screen and (min-width: 768px) {
   .sp-menu {
     display: none;
+  }
+}
+
+.fv {
+  position: relative;
+  overflow: hidden;
+}
+
+.fv__img {
+  height: 100vh;
+  background-image: url(/images/fv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fv__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .fv__title {
+    font-size: 48px;
   }
 }
