@@ -21,7 +21,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -32,7 +33,7 @@ img {
   border: 0;
 }
 
-ul {
+ul, li {
   list-style: none;
 }
 
