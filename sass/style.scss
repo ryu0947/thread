@@ -1,6 +1,12 @@
 $cBlack: #333333;
 $cWhite: #ffffff;
 
+@mixin container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 @mixin sp($tblet-Width: 480px) {
   @media screen and (min-width: $sp-Width) {
     @content;
@@ -48,7 +54,8 @@ img {
   border: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -67,9 +74,7 @@ a {
   z-index: 100;
 
   &__container {
-    width: 90%;
-    max-width: 1080px;
-    margin: 0 auto;
+    @include container;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,10 +165,7 @@ a {
 
   &__img {
     height: 100vh;
-    background-image: url(/images/fv.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(/images/fv.jpg) no-repeat center/cover;
 
     &::before {
       content: "";
@@ -187,6 +189,47 @@ a {
 
     @include pc {
       font-size: 48px;
+    }
+  }
+}
+
+.philosophy {
+  height: 100vh;
+  overflow: hidden;
+  background: url(/images/message_bg.jpg) no-repeat center/cover;
+
+  &__inner {
+    @include container;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $cWhite;
+    font-size: 40px;
+    padding-bottom: 30px;
+    @include pc {
+      font-size: 60px;
+      padding-bottom: 90px;
+    }
+  }
+
+  &__leade {
+    color: $cWhite;
+    font-size: 20px;
+    padding-bottom: 20px;
+    @include pc {
+      font-size: 32px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__text {
+    color: $cWhite;
+    padding-bottom: 16px;
+    @include pc {
+      color: $cWhite;
+      padding-bottom: 32px;
     }
   }
 }
