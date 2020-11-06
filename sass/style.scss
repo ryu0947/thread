@@ -50,6 +50,7 @@ li {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom;
   border: 0;
 }
@@ -200,14 +201,15 @@ a {
 
   &__inner {
     @include container;
-    padding-top: 90px;
+    padding-top: 72px;
     text-align: center;
   }
 
   &__title {
     color: $cWhite;
     font-size: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+
     @include pc {
       font-size: 60px;
       padding-bottom: 90px;
@@ -218,6 +220,7 @@ a {
     color: $cWhite;
     font-size: 20px;
     padding-bottom: 20px;
+
     @include pc {
       font-size: 32px;
       padding-bottom: 40px;
@@ -227,9 +230,44 @@ a {
   &__text {
     color: $cWhite;
     padding-bottom: 16px;
+
     @include pc {
       color: $cWhite;
       padding-bottom: 32px;
     }
   }
+}
+
+.works {
+  background-color: #f2f2f2;
+
+  &__inner {
+    @include container;
+    padding: 72px 15px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 32px;
+  }
+
+  &__li {
+    padding-bottom: 48px;
+  }
+
+  &__info {
+    padding-top: 16px;
+    line-height: 1.7;
+  }
+
+    & .post-date, .work-content {
+      color: #c7c7c7;
+      font-size: 12px;
+    }
+
+    & .past-work{
+      font-size: 24px;
+    }
+
 }
