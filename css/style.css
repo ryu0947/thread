@@ -42,7 +42,42 @@ li {
 a {
   color: #333333;
   text-decoration: none;
-  transition: all 0.6s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 88px;
+  margin-top: 10px;
+  text-align: center;
+  border: 2px solid #000;
+  font-weight: bold;
+}
+
+.btn.slide-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn.slide-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  background-color: #333333;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn:hover::before {
+  transform: none;
 }
 
 .header {
@@ -241,7 +276,7 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 72px 15px 0;
+  padding: 72px 15px;
 }
 
 .works__title {
@@ -259,11 +294,16 @@ a {
   line-height: 1.7;
 }
 
-.works .post-date, .works .work-content {
+.works .post-date,
+.works .work-content {
   color: #c7c7c7;
   font-size: 12px;
 }
 
 .works .past-work {
   font-size: 24px;
+}
+
+.works__btn {
+  text-align: center;
 }
