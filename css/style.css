@@ -89,7 +89,7 @@ a {
 }
 
 .header__container {
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -222,7 +222,7 @@ a {
 }
 
 .philosophy__inner {
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 72px 0;
@@ -277,9 +277,10 @@ a {
 
 @media screen and (min-width: 768px) {
   .works__inner {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 80px 0;
   }
 }
 
@@ -289,17 +290,24 @@ a {
   padding-bottom: 80px;
 }
 
+@media screen and (min-width: 768px) {
+  .works__title {
+    font-size: 64px;
+  }
+}
+
 .works__li {
   padding-bottom: 56px;
 }
 
 @media screen and (min-width: 768px) {
   .works__li {
-    padding-bottom: 160px;
+    padding-bottom: 80px;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .works__airticle--row {
     display: flex;
     align-items: center;
@@ -308,7 +316,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .works__airticle--row-reverse {
     display: flex;
     align-items: center;
@@ -320,12 +328,18 @@ a {
 .works__info {
   padding-top: 16px;
   line-height: 1.7;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
   .works__info {
-    text-align-last: left;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .works__info {
+    text-align: left;
   }
 }
 
@@ -335,7 +349,7 @@ a {
   font-size: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .works .post-date,
   .works .work-content {
     font-size: 16px;
@@ -348,7 +362,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .works .past-work {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 

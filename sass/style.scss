@@ -2,18 +2,27 @@ $cBlack: #333333;
 $cWhite: #ffffff;
 
 @mixin container {
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+// SP横
 @mixin sp($tblet-Width: 480px) {
   @media screen and (min-width: $tablet-Width) {
     @content;
   }
 }
 
-@mixin pc($pc-Width: 768px) {
+// タブレット
+@mixin tablet($tablet-Width: 768px) {
+  @media screen and (min-width: $tablet-Width) {
+    @content;
+  }
+}
+
+// PC
+@mixin pc($pc-Width: 1024px) {
   @media screen and (min-width: $pc-Width) {
     @content;
   }
@@ -119,7 +128,7 @@ a {
     margin-left: auto;
     display: none;
 
-    @include pc {
+    @include tablet {
       display: block;
     }
   }
@@ -155,7 +164,7 @@ a {
     margin-bottom: 0;
   }
 
-  @include pc {
+  @include tablet {
     display: none;
   }
 }
@@ -189,7 +198,7 @@ a {
     }
   }
 
-  @include pc {
+  @include tablet {
     display: none;
   }
 }
@@ -222,7 +231,7 @@ a {
     color: $cWhite;
     font-size: 30px;
 
-    @include pc {
+    @include tablet {
       font-size: 48px;
     }
   }
@@ -244,7 +253,7 @@ a {
     font-size: 40px;
     padding-bottom: 32px;
 
-    @include pc {
+    @include tablet {
       font-size: 60px;
       padding-bottom: 90px;
     }
@@ -255,7 +264,7 @@ a {
     font-size: 20px;
     padding-bottom: 20px;
 
-    @include pc {
+    @include tablet {
       font-size: 32px;
       padding-bottom: 40px;
     }
@@ -265,7 +274,7 @@ a {
     color: $cWhite;
     padding-bottom: 16px;
 
-    @include pc {
+    @include tablet {
       color: $cWhite;
       padding-bottom: 32px;
     }
@@ -278,8 +287,9 @@ a {
   &__inner {
     padding: 72px 25px;
 
-    @include pc {
+    @include tablet {
       @include container;
+      padding: 80px 0;
     }
   }
 
@@ -287,13 +297,18 @@ a {
     text-align: center;
     font-size: 40px;
     padding-bottom: 80px;
+
+    @include tablet {
+      font-size: 64px;
+    }
   }
 
   &__li {
     padding-bottom: 56px;
 
-    @include pc {
-      padding-bottom: 160px;
+    @include tablet {
+      padding-bottom: 80px;
+      text-align: center;
     }
   }
 
@@ -318,10 +333,14 @@ a {
   &__info {
     padding-top: 16px;
     line-height: 1.7;
-    text-align: center;
+    text-align: left;
+
+    @include tablet {
+      text-align: center;
+    }
 
     @include pc {
-      text-align-last: left;
+      text-align: left;
     }
   }
 
@@ -338,8 +357,8 @@ a {
   & .past-work {
     font-size: 24px;
 
-    @include pc {
-      font-size: 48px;
+    @include tablet {
+      font-size: 40px;
     }
   }
 
