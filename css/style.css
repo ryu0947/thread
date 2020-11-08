@@ -47,7 +47,6 @@ a {
 .btn {
   display: inline-block;
   padding: 12px 88px;
-  margin-top: 10px;
   text-align: center;
   border: 2px solid #000;
   font-weight: bold;
@@ -226,7 +225,7 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 72px;
+  padding: 72px 0;
   text-align: center;
 }
 
@@ -273,25 +272,61 @@ a {
 }
 
 .works__inner {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 72px 15px;
+  padding: 72px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .works__inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .works__title {
   text-align: center;
   font-size: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 80px;
 }
 
 .works__li {
-  padding-bottom: 48px;
+  padding-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .works__li {
+    padding-bottom: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works__airticle--row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works__airticle--row-reverse {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
 }
 
 .works__info {
   padding-top: 16px;
   line-height: 1.7;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .works__info {
+    text-align-last: left;
+  }
 }
 
 .works .post-date,
@@ -300,8 +335,21 @@ a {
   font-size: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .works .post-date,
+  .works .work-content {
+    font-size: 16px;
+  }
+}
+
 .works .past-work {
   font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .works .past-work {
+    font-size: 48px;
+  }
 }
 
 .works__btn {

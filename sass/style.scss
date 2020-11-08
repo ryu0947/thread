@@ -8,7 +8,7 @@ $cWhite: #ffffff;
 }
 
 @mixin sp($tblet-Width: 480px) {
-  @media screen and (min-width: $sp-Width) {
+  @media screen and (min-width: $tablet-Width) {
     @content;
   }
 }
@@ -68,7 +68,6 @@ a {
 .btn {
   display: inline-block;
   padding: 12px 88px;
-  margin-top: 10px;
   text-align: center;
   border: 2px solid #000;
   font-weight: bold;
@@ -236,7 +235,7 @@ a {
 
   &__inner {
     @include container;
-    padding-top: 72px;
+    padding: 72px 0;
     text-align: center;
   }
 
@@ -277,33 +276,71 @@ a {
   background-color: #f2f2f2;
 
   &__inner {
-    @include container;
-    padding: 72px 15px;
+    padding: 72px 25px;
+
+    @include pc {
+      @include container;
+    }
   }
 
   &__title {
     text-align: center;
     font-size: 40px;
-    padding-bottom: 32px;
+    padding-bottom: 80px;
   }
 
   &__li {
-    padding-bottom: 48px;
+    padding-bottom: 56px;
+
+    @include pc {
+      padding-bottom: 160px;
+    }
+  }
+
+  &__airticle--row {
+    @include pc {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__airticle--row-reverse {
+    @include pc {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+    }
   }
 
   &__info {
     padding-top: 16px;
     line-height: 1.7;
+    text-align: center;
+
+    @include pc {
+      text-align-last: left;
+    }
   }
 
   & .post-date,
   .work-content {
     color: #c7c7c7;
     font-size: 12px;
+
+    @include pc {
+      font-size: 16px;
+    }
   }
 
   & .past-work {
     font-size: 24px;
+
+    @include pc {
+      font-size: 48px;
+    }
   }
 
   &__btn {
