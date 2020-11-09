@@ -225,7 +225,7 @@ a {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 72px 0;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -272,7 +272,7 @@ a {
 }
 
 .works__inner {
-  padding: 72px 25px;
+  padding: 80px 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -368,4 +368,30 @@ a {
 
 .works__btn {
   text-align: center;
+}
+
+.recruit__inner {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.recruit__title {
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.heading-tokyo {
+  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+  height: 300px;
+  position: relative;
+}
+
+.heading-tokyo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }

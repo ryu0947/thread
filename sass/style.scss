@@ -1,10 +1,23 @@
 $cBlack: #333333;
 $cWhite: #ffffff;
+$secTitle: 40px;
+$topSpace: 80px;
 
+// コンテンツの横幅
 @mixin container {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+// 黒いマスク
+@mixin mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.6);
 }
 
 // SP横
@@ -213,12 +226,7 @@ a {
 
     &::before {
       content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color: #000000, $alpha: 0.6);
+      @include mask;
     }
   }
 
@@ -244,13 +252,13 @@ a {
 
   &__inner {
     @include container;
-    padding: 72px 0;
+    padding-top: $topSpace;
     text-align: center;
   }
 
   &__title {
     color: $cWhite;
-    font-size: 40px;
+    font-size: $secTitle;
     padding-bottom: 32px;
 
     @include tablet {
@@ -285,17 +293,17 @@ a {
   background-color: #f2f2f2;
 
   &__inner {
-    padding: 72px 25px;
+    padding: $topSpace 25px;
 
     @include tablet {
       @include container;
-      padding: 80px 0;
+      padding: $topSpace 0;
     }
   }
 
   &__title {
     text-align: center;
-    font-size: 40px;
+    font-size: $secTitle;
     padding-bottom: 80px;
 
     @include tablet {
@@ -358,11 +366,34 @@ a {
     font-size: 24px;
 
     @include tablet {
-      font-size: 40px;
+      font-size: $secTitle;
     }
   }
 
   &__btn {
     text-align: center;
   }
+}
+
+.recruit {
+  &__inner {
+    text-align: center;
+    margin: $topSpace 0;
+  }
+
+  &__title {
+    font-size: $secTitle;
+    margin-bottom: 80px;
+  }
+}
+
+.heading-tokyo {
+  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+  height: 300px;
+  position: relative;
+}
+
+.heading-tokyo::before {
+  content: "";
+  @include mask;
 }
