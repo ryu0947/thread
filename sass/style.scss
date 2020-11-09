@@ -493,7 +493,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 
   &__inner {
     padding: $space 15px;
-    @include pc {
+    @include tablet {
       padding: $space;
     }
   }
@@ -509,8 +509,13 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   }
   & br {
     display: none;
+
     @include pc {
       display: block;
     }
   }
+}
+
+.footer {
+  background-color: $cBlack;
 }
