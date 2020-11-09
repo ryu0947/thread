@@ -380,13 +380,12 @@ a {
   margin-bottom: 80px;
 }
 
-.heading-tokyo {
-  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+.heading {
   height: 300px;
   position: relative;
 }
 
-.heading-tokyo::before {
+.heading::before {
   content: "";
   position: absolute;
   top: 0;
@@ -394,4 +393,33 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tokyo {
+  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+}
+
+.osaka {
+  background: url(/images/office_osaka.jpg) no-repeat center/cover;
+}
+
+.nagoya {
+  background: url(/images/office_nagoya.jpg) no-repeat center/cover;
+}
+
+.fukuoka {
+  background: url(/images/office_fukuoka.jpg) no-repeat center/cover;
+}
+
+.lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 32px;
 }

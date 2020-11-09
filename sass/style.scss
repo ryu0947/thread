@@ -10,16 +10,6 @@ $topSpace: 80px;
   margin: 0 auto;
 }
 
-// 黒いマスク
-@mixin mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($color: #000000, $alpha: 0.6);
-}
-
 // SP横
 @mixin sp($tblet-Width: 480px) {
   @media screen and (min-width: $tablet-Width) {
@@ -226,7 +216,12 @@ a {
 
     &::before {
       content: "";
-      @include mask;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
     }
   }
 
@@ -387,13 +382,37 @@ a {
   }
 }
 
-.heading-tokyo {
-  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+.heading {
   height: 300px;
   position: relative;
 }
 
-.heading-tokyo::before {
+.heading::before {
   content: "";
-  @include mask;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+}
+
+$nameList: tokyo, osaka, nagoya, fukuoka;
+@each $name in $nameList {
+  .#{$name} {
+    background: url(/images/office_#{$name}.jpg) no-repeat center/cover;
+  }
+}
+
+.lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: $cWhite;
+}
+
+.title {
+  font-size: 32px;
 }
