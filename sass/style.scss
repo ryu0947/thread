@@ -1,6 +1,7 @@
 $cBlack: #333333;
 $cWhite: #ffffff;
-$secTitle: 40px;
+$spTitle: 40px;
+$tab-pcTitle: 64px;
 $topSpace: 80px;
 
 // コンテンツの横幅
@@ -98,7 +99,7 @@ a {
       height: 100%;
       transform: translateX(-100%);
       background-color: $cBlack;
-      transition: all 0.3s;
+      transition: transform 0.3s;
       z-index: -1;
     }
   }
@@ -109,6 +110,20 @@ a {
     &::before {
       transform: none;
     }
+  }
+}
+
+.detail-btn {
+  width: 295px;
+  margin-bottom: 16px;
+  @include tablet {
+    display: block;
+    margin: 0 auto 16px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $cBlack;
   }
 }
 
@@ -253,7 +268,7 @@ a {
 
   &__title {
     color: $cWhite;
-    font-size: $secTitle;
+    font-size: $spTitle;
     padding-bottom: 32px;
 
     @include tablet {
@@ -298,11 +313,11 @@ a {
 
   &__title {
     text-align: center;
-    font-size: $secTitle;
+    font-size: $spTitle;
     padding-bottom: 80px;
 
     @include tablet {
-      font-size: 64px;
+      font-size: $tab-pcTitle;
     }
   }
 
@@ -361,7 +376,7 @@ a {
     font-size: 24px;
 
     @include tablet {
-      font-size: $secTitle;
+      font-size: $spTitle;
     }
   }
 
@@ -377,14 +392,36 @@ a {
   }
 
   &__title {
-    font-size: $secTitle;
+    font-size: $spTitle;
     margin-bottom: 80px;
+
+    @include tablet {
+      font-size: $tab-pcTitle;
+    }
+  }
+
+  @include pc {
+    &__ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__li {
+      width: 50%;
+      &:nth-child(2n) .heading {
+        border-left: 1px solid #fff;
+      }
+    }
   }
 }
 
 .heading {
   height: 300px;
   position: relative;
+
+  @include pc {
+    height: 375px;
+  }
 }
 
 .heading::before {
@@ -398,6 +435,7 @@ a {
 }
 
 $nameList: tokyo, osaka, nagoya, fukuoka;
+
 @each $name in $nameList {
   .#{$name} {
     background: url(/images/office_#{$name}.jpg) no-repeat center/cover;
@@ -415,4 +453,23 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 
 .title {
   font-size: 32px;
+
+  @include tablet {
+    font-size: 48px;
+  }
+}
+
+.body {
+  margin: 32px 0 48px;
+  line-height: 1.7;
+}
+
+.office-info {
+  margin-bottom: 24px;
+}
+
+.office-name {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 4px;
 }

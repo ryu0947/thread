@@ -67,7 +67,7 @@ a {
   height: 100%;
   transform: translateX(-100%);
   background-color: #333333;
-  transition: all 0.3s;
+  transition: transform 0.3s;
   z-index: -1;
 }
 
@@ -77,6 +77,23 @@ a {
 
 .btn:hover::before {
   transform: none;
+}
+
+.detail-btn {
+  width: 295px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .detail-btn {
+    display: block;
+    margin: 0 auto 16px;
+    transition: all 0.3s;
+  }
+}
+
+.detail-btn:hover {
+  background-color: #333333;
 }
 
 .header {
@@ -380,9 +397,34 @@ a {
   margin-bottom: 80px;
 }
 
+@media screen and (min-width: 768px) {
+  .recruit__title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .recruit__ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recruit__li {
+    width: 50%;
+  }
+  .recruit__li:nth-child(2n) .heading {
+    border-left: 1px solid #fff;
+  }
+}
+
 .heading {
   height: 300px;
   position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    height: 375px;
+  }
 }
 
 .heading::before {
@@ -422,4 +464,25 @@ a {
 
 .title {
   font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.body {
+  margin: 32px 0 48px;
+  line-height: 1.7;
+}
+
+.office-info {
+  margin-bottom: 24px;
+}
+
+.office-name {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 4px;
 }
