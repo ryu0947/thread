@@ -437,12 +437,12 @@ a {
   }
 }
 
-.recruit .heading {
+.heading {
   position: relative;
   height: 320px;
 }
 
-.recruit .heading::before {
+.heading::before {
   content: "";
   position: absolute;
   top: 0;
@@ -452,23 +452,23 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.recruit .tokyo {
+.tokyo {
   background: url(/images/office_tokyo.jpg) no-repeat center/cover;
 }
 
-.recruit .osaka {
+.osaka {
   background: url(/images/office_osaka.jpg) no-repeat center/cover;
 }
 
-.recruit .nagoya {
+.nagoya {
   background: url(/images/office_nagoya.jpg) no-repeat center/cover;
 }
 
-.recruit .fukuoka {
+.fukuoka {
   background: url(/images/office_fukuoka.jpg) no-repeat center/cover;
 }
 
-.recruit .lead {
+.lead {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -477,95 +477,95 @@ a {
   color: #ffffff;
 }
 
-.recruit .title {
+.title {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .recruit .title {
+  .title {
     font-size: 48px;
   }
 }
 
-.recruit .body {
+.body {
   margin: 32px 0 48px;
   line-height: 1.7;
 }
 
-.recruit .office-info {
+.office-info {
   margin-bottom: 24px;
 }
 
-.recruit .office-name {
+.office-name {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 4px;
 }
 
-.recruit .contact {
+.contact {
   background-color: #f2f2f2;
   text-align: center;
 }
 
-.recruit .contact__inner {
+.contact__inner {
   padding: 80px 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .recruit .contact__inner {
+  .contact__inner {
     padding: 80px;
   }
 }
 
-.recruit .contact__title {
+.contact__title {
   font-size: 40px;
   padding-bottom: 80px;
 }
 
-.recruit .contact__text {
+.contact__text {
   padding-bottom: 48px;
   line-height: 2;
 }
 
-.recruit .contact br {
+.contact br {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .recruit .contact br {
+  .contact br {
     display: block;
   }
 }
 
-.recruit .footer {
+.footer {
   background-color: #333333;
   color: #ffffff;
   text-align: center;
   padding-bottom: 5px;
 }
 
-.recruit .footer__inner {
+.footer__inner {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 40px;
 }
 
-.recruit .footer__title {
+.footer__title {
   font-size: 40px;
 }
 
-.recruit .footer__ul {
+.footer__ul {
   padding: 32px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.recruit .footer__li {
+.footer__li {
   margin-right: 24px;
 }
 
-.recruit .footer__li:last-child {
+.footer__li:last-child {
   margin-right: 0;
 }
