@@ -233,9 +233,15 @@ a {
 }
 
 .philosophy {
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   background: url(/images/message_bg.jpg) no-repeat center/cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .philosophy {
+    height: 100vh;
+  }
 }
 
 .philosophy__inner {
@@ -289,7 +295,7 @@ a {
 }
 
 .works__inner {
-  padding: 80px 25px;
+  padding: 80px 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -426,18 +432,17 @@ a {
   .recruit__li {
     width: 50%;
   }
-  .recruit__li:nth-child(2n) .heading {
+  .recruit:nth-child(2n) .heading {
     border-left: 1px solid #fff;
   }
 }
 
-.heading {
+.recruit .heading {
   position: relative;
-  width: 100%;
   height: 320px;
 }
 
-.heading::before {
+.recruit .heading::before {
   content: "";
   position: absolute;
   top: 0;
@@ -447,23 +452,23 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.tokyo {
+.recruit .tokyo {
   background: url(/images/office_tokyo.jpg) no-repeat center/cover;
 }
 
-.osaka {
+.recruit .osaka {
   background: url(/images/office_osaka.jpg) no-repeat center/cover;
 }
 
-.nagoya {
+.recruit .nagoya {
   background: url(/images/office_nagoya.jpg) no-repeat center/cover;
 }
 
-.fukuoka {
+.recruit .fukuoka {
   background: url(/images/office_fukuoka.jpg) no-repeat center/cover;
 }
 
-.lead {
+.recruit .lead {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -472,66 +477,95 @@ a {
   color: #ffffff;
 }
 
-.title {
+.recruit .title {
   font-size: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .title {
+  .recruit .title {
     font-size: 48px;
   }
 }
 
-.body {
+.recruit .body {
   margin: 32px 0 48px;
   line-height: 1.7;
 }
 
-.office-info {
+.recruit .office-info {
   margin-bottom: 24px;
 }
 
-.office-name {
+.recruit .office-name {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 4px;
 }
 
-.contact {
+.recruit .contact {
   background-color: #f2f2f2;
   text-align: center;
 }
 
-.contact__inner {
+.recruit .contact__inner {
   padding: 80px 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .contact__inner {
+  .recruit .contact__inner {
     padding: 80px;
   }
 }
 
-.contact__title {
+.recruit .contact__title {
   font-size: 40px;
   padding-bottom: 80px;
 }
 
-.contact__text {
+.recruit .contact__text {
   padding-bottom: 48px;
-  line-height: 2.0;
+  line-height: 2;
 }
 
-.contact br {
+.recruit .contact br {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .contact br {
+  .recruit .contact br {
     display: block;
   }
 }
 
-.footer {
+.recruit .footer {
   background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.recruit .footer__inner {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.recruit .footer__title {
+  font-size: 40px;
+}
+
+.recruit .footer__ul {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruit .footer__li {
+  margin-right: 24px;
+}
+
+.recruit .footer__li:last-child {
+  margin-right: 0;
 }
