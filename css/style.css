@@ -432,9 +432,6 @@ a {
   .recruit__li {
     width: 50%;
   }
-  .recruit:nth-child(2n) .heading {
-    border-left: 1px solid #fff;
-  }
 }
 
 .heading {
