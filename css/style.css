@@ -325,6 +325,21 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .works__thumb {
+    width: 645px;
+    height: 430px;
+    overflow: hidden;
+  }
+  .works__thumb img {
+    transition: transform 0.8s;
+  }
+  .works__thumb img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .works__airticle--row {
     display: flex;
     align-items: center;
@@ -417,14 +432,9 @@ a {
 }
 
 .heading {
-  height: 300px;
   position: relative;
-}
-
-@media screen and (min-width: 1024px) {
-  .heading {
-    height: 375px;
-  }
+  width: 100%;
+  height: 300px;
 }
 
 .heading::before {
