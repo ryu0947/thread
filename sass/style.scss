@@ -2,7 +2,7 @@ $cBlack: #333333;
 $cWhite: #ffffff;
 $spTitle: 40px;
 $tab-pcTitle: 64px;
-$topSpace: 80px;
+$space: 80px;
 
 // コンテンツの横幅
 @mixin container {
@@ -262,7 +262,7 @@ a {
 
   &__inner {
     @include container;
-    padding-top: $topSpace;
+    padding-top: $space;
     text-align: center;
   }
 
@@ -303,18 +303,18 @@ a {
   background-color: #f2f2f2;
 
   &__inner {
-    padding: $topSpace 25px;
+    padding: $space 25px;
 
     @include tablet {
       @include container;
-      padding: $topSpace 0;
+      padding: $space 0;
     }
   }
 
   &__title {
     text-align: center;
     font-size: $spTitle;
-    padding-bottom: 80px;
+    padding-bottom: $space;
 
     @include tablet {
       font-size: $tab-pcTitle;
@@ -325,7 +325,7 @@ a {
     padding-bottom: 56px;
 
     @include tablet {
-      padding-bottom: 80px;
+      padding-bottom: $space;
       text-align: center;
     }
   }
@@ -404,12 +404,12 @@ a {
 .recruit {
   &__inner {
     text-align: center;
-    margin: $topSpace 0;
+    margin: $space 0;
   }
 
   &__title {
     font-size: $spTitle;
-    margin-bottom: 80px;
+    margin-bottom: $space;
 
     @include tablet {
       font-size: $tab-pcTitle;
@@ -485,4 +485,32 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 4px;
+}
+
+.contact {
+  background-color: #f2f2f2;
+  text-align: center;
+
+  &__inner {
+    padding: $space 15px;
+    @include pc {
+      padding: $space;
+    }
+  }
+
+  &__title {
+    font-size: $spTitle;
+    padding-bottom: $space;
+  }
+
+  &__text {
+    padding-bottom: 48px;
+    line-height: 2.0;
+  }
+  & br {
+    display: none;
+    @include pc {
+      display: block;
+    }
+  }
 }
