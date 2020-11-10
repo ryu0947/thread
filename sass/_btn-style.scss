@@ -27,28 +27,20 @@
     }
   }
 
+  &.filled {
+    transition: background-color 0.3s;
+
+    :hover {
+        background-color: $cBlack;
+      }
+  }
+
   &:hover {
     color: $cWhite;
 
     &::before {
       transform: none;
     }
-  }
-}
-
-// recruitコンテンツのボタン
-.detail-btn {
-  width: 295px;
-  margin-bottom: 16px;
-
-  @include tablet {
-    display: block;
-    margin: 0 auto 16px;
-    transition: all 0.3s;
-  }
-
-  &:hover {
-    background-color: $cBlack;
   }
 }
 
