@@ -1,19 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #333333;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  background-color: #ffffff;
-  font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-}
-
+body,
 h1,
 h2,
 h3,
@@ -42,6 +27,14 @@ li {
 a {
   color: #333333;
   text-decoration: none;
+}
+
+body {
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  background-color: #ffffff;
+  font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 .btn {
