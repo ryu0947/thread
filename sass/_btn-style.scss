@@ -30,7 +30,7 @@
   &.filled {
     transition: background-color 0.3s;
 
-    :hover {
+    &:hover {
         background-color: $cBlack;
       }
   }
@@ -42,6 +42,13 @@
       transform: none;
     }
   }
+}
+
+.detaile-btn {
+    & a {
+        width: 115px;
+        margin-top: 16px;
+    }
 }
 
 // TOPへ戻るボタン
