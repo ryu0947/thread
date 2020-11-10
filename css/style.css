@@ -56,29 +56,20 @@ a {
   z-index: -1;
 }
 
+.btn.filled {
+  transition: background-color 0.3s;
+}
+
+.btn.filled :hover {
+  background-color: #333333;
+}
+
 .btn:hover {
   color: #ffffff;
 }
 
 .btn:hover::before {
   transform: none;
-}
-
-.detail-btn {
-  width: 295px;
-  margin-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .detail-btn {
-    display: block;
-    margin: 0 auto 16px;
-    transition: all 0.3s;
-  }
-}
-
-.detail-btn:hover {
-  background-color: #333333;
 }
 
 .top-btn {
@@ -377,7 +368,7 @@ body {
     overflow: hidden;
   }
   .works__thumb img {
-    transition: transform 0.8s;
+    transition: transform 0.7s;
   }
   .works__thumb img:hover {
     transform: scale(1.1);
