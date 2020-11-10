@@ -1,0 +1,20 @@
+// SP横
+@mixin sp($tblet-Width: 480px) {
+  @media screen and (min-width: $tablet-Width) {
+    @content;
+  }
+}
+
+// タブレット
+@mixin tablet($tablet-Width: 768px) {
+  @media screen and (min-width: $tablet-Width) {
+    @content;
+  }
+}
+
+// PC
+@mixin pc($pc-Width: 1024px) {
+  @media screen and (min-width: $pc-Width) {
+    @content;
+  }
+}
