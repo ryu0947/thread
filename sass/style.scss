@@ -211,6 +211,7 @@ body {
 }
 
 .works {
+  text-align: center;
   background-color: #f2f2f2;
 
   &__inner {
@@ -305,10 +306,6 @@ body {
     @include tablet {
       font-size: $spTitle;
     }
-  }
-
-  &__btn {
-    text-align: center;
   }
 }
 

@@ -60,7 +60,7 @@ a {
   transition: background-color 0.3s;
 }
 
-.btn.filled :hover {
+.btn.filled:hover {
   background-color: #333333;
 }
 
@@ -70,6 +70,11 @@ a {
 
 .btn:hover::before {
   transform: none;
+}
+
+.detaile-btn a {
+  width: 115px;
+  margin-top: 16px;
 }
 
 .top-btn {
@@ -323,6 +328,7 @@ body {
 }
 
 .works {
+  text-align: center;
   background-color: #f2f2f2;
 }
 
@@ -433,10 +439,6 @@ body {
   .works .past-work {
     font-size: 40px;
   }
-}
-
-.works__btn {
-  text-align: center;
 }
 
 .recruit__inner {
