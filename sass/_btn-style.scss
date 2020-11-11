@@ -48,14 +48,14 @@
 .detaile-btn {
     & a {
         width: 115px;
-        margin-top: 16px;
+        margin-top: $space20;
     }
 }
 
 // TOPへ戻るボタン
 .top-btn {
   position: fixed;
-  bottom: 20%;
+  bottom: 16%;
   right: 1%;
   width: 50px;
   height: 50px;
@@ -82,6 +82,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  right: -2px;
+  right: -3px;
   margin: auto;
 }

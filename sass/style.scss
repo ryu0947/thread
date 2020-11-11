@@ -44,13 +44,11 @@ body {
 
   &__ul {
     display: flex;
-    align-items: center;
   }
 
   &__li {
     margin-left: 48px;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 18px;
 
     & a {
       color: $cWhite;
@@ -109,9 +107,9 @@ body {
 
   &__li {
     color: $cWhite;
-    font-size: 24px;
+    font-size: $fontSize24;
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: $space40;
     text-align: center;
 
     & > span {
@@ -170,39 +168,39 @@ body {
 
   &__inner {
     @include container;
-    padding-top: $space;
+    padding-top: $space80;
     text-align: center;
   }
 
   &__title {
     color: $cWhite;
     font-size: $spTitle;
-    padding-bottom: 32px;
+    padding-bottom: $space40;
 
     @include tablet {
       font-size: 60px;
-      padding-bottom: 90px;
+      padding-bottom: $space80;
     }
   }
 
   &__leade {
     color: $cWhite;
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: $fontSize24;
+    padding-bottom: $space40;
 
     @include tablet {
       font-size: 32px;
-      padding-bottom: 40px;
+      padding-bottom: $space40;
     }
   }
 
   &__text {
     color: $cWhite;
-    padding-bottom: 16px;
+    padding-bottom: $space20;
 
     @include tablet {
       color: $cWhite;
-      padding-bottom: 32px;
+      padding-bottom: $space40;
     }
   }
 }
@@ -212,18 +210,18 @@ body {
   background-color: #f2f2f2;
 
   &__inner {
-    padding: $space 20px;
+    padding: $space80 $space20;
 
     @include tablet {
       @include container;
-      padding: $space 0;
+      padding: $space80 0;
     }
   }
 
   &__title {
     text-align: center;
     font-size: $spTitle;
-    padding-bottom: $space;
+    padding-bottom: $space80;
 
     @include tablet {
       font-size: $tab-pcTitle;
@@ -234,7 +232,7 @@ body {
     padding-bottom: 56px;
 
     @include tablet {
-      padding-bottom: $space;
+      padding-bottom: $space80;
       text-align: center;
     }
   }
@@ -274,7 +272,7 @@ body {
   }
 
   &__info {
-    padding-top: 16px;
+    padding-top: $space20;
     line-height: 1.7;
     text-align: left;
 
@@ -298,7 +296,7 @@ body {
   }
 
   & .past-work {
-    font-size: 24px;
+    font-size: $fontSize24;
 
     @include tablet {
       font-size: $spTitle;
@@ -309,12 +307,12 @@ body {
 .recruit {
   &__inner {
     text-align: center;
-    margin: $space 0;
+    margin: $space80 0;
   }
 
   &__title {
     font-size: $spTitle;
-    margin-bottom: $space;
+    margin-bottom: $space80;
 
     @include tablet {
       font-size: $tab-pcTitle;
@@ -364,25 +362,21 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 }
 
 .title {
-  font-size: 32px;
+  font-size: $spTitle;
 
   @include tablet {
-    font-size: 48px;
+    font-size: $tab-pcTitle;
   }
 }
 
 .body {
-  margin: 32px 0 48px;
+  margin: $space40 0;
   line-height: 1.7;
-}
-
-.office-info {
-  margin-bottom: 24px;
 }
 
 .office-name {
   font-weight: bold;
-  font-size: 24px;
+  font-size: $fontSize24;
   margin-bottom: 4px;
 }
 
@@ -391,19 +385,19 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   text-align: center;
 
   &__inner {
-    padding: $space 15px;
+    padding: $space80 15px;
     @include tablet {
-      padding: $space;
+      padding: $space80;
     }
   }
 
   &__title {
     font-size: $spTitle;
-    padding-bottom: $space;
+    padding-bottom: $space80;
   }
 
   &__text {
-    padding-bottom: 48px;
+    padding-bottom: $space40;
     line-height: 2;
   }
   & br {
@@ -423,7 +417,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 
   &__inner {
     @include container;
-    padding-top: 40px;
+    padding-top: $space40;
   }
 
   &__title {
@@ -431,14 +425,14 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   }
 
   &__ul {
-    padding: 32px 0;
+    padding: $space40 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   &__li {
-    margin-right: 24px;
+    margin-right: $space20;
 
     &:last-child {
       margin-right: 0;

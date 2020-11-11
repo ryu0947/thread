@@ -74,12 +74,12 @@ a {
 
 .detaile-btn a {
   width: 115px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .top-btn {
   position: fixed;
-  bottom: 20%;
+  bottom: 16%;
   right: 1%;
   width: 50px;
   height: 50px;
@@ -106,7 +106,7 @@ a {
   top: 0;
   left: 0;
   bottom: 0;
-  right: -2px;
+  right: -3px;
   margin: auto;
 }
 
@@ -149,13 +149,11 @@ body {
 
 .header__ul {
   display: flex;
-  align-items: center;
 }
 
 .header__li {
   margin-left: 48px;
-  font-size: 20px;
-  cursor: pointer;
+  font-size: 18px;
 }
 
 .header__li a {
@@ -289,20 +287,20 @@ body {
 .philosophy__title {
   color: #ffffff;
   font-size: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .philosophy__title {
     font-size: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 }
 
 .philosophy__leade {
   color: #ffffff;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 24px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,13 +312,13 @@ body {
 
 .philosophy__text {
   color: #ffffff;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .philosophy__text {
     color: #ffffff;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
   }
 }
 
@@ -398,7 +396,7 @@ body {
 }
 
 .works__info {
-  padding-top: 16px;
+  padding-top: 20px;
   line-height: 1.7;
   text-align: left;
 }
@@ -505,22 +503,18 @@ body {
 }
 
 .title {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 48px;
+    font-size: 64px;
   }
 }
 
 .body {
-  margin: 32px 0 48px;
+  margin: 40px 0;
   line-height: 1.7;
-}
-
-.office-info {
-  margin-bottom: 24px;
 }
 
 .office-name {
@@ -550,7 +544,7 @@ body {
 }
 
 .contact__text {
-  padding-bottom: 48px;
+  padding-bottom: 40px;
   line-height: 2;
 }
 
@@ -582,14 +576,14 @@ body {
 }
 
 .footer__ul {
-  padding: 32px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer__li {
-  margin-right: 24px;
+  margin-right: 20px;
 }
 
 .footer__li:last-child {
