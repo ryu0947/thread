@@ -416,14 +416,7 @@ body {
 .works .post-date,
 .works .work-content {
   color: #c7c7c7;
-  font-size: 12px;
-}
-
-@media screen and (min-width: 1024px) {
-  .works .post-date,
-  .works .work-content {
-    font-size: 16px;
-  }
+  font-size: 14px;
 }
 
 .works .past-work {
