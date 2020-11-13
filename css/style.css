@@ -234,12 +234,12 @@ body {
   overflow: hidden;
 }
 
-.fv__img {
+.fv__bg {
   height: 100vh;
   background: url(/images/fv.jpg) no-repeat center/cover;
 }
 
-.fv__img::before {
+.fv__bg::before {
   content: "";
   position: absolute;
   top: 0;
