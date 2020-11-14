@@ -13,7 +13,7 @@ body {
   color: $cBlack;
   font-size: 16px;
   letter-spacing: 0.1em;
-  background-color: $cWhite;
+  background-color: $white;
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
@@ -51,14 +51,14 @@ body {
     font-size: 18px;
 
     & a {
-      color: $cWhite;
+      color: $white;
       font-weight: bold;
       margin-bottom: 7px;
 
       &::after {
         content: "";
         display: block;
-        border-bottom: 2px solid $cWhite;
+        border-bottom: 2px solid $white;
         transition: all 0.3s;
         width: 0;
       }
@@ -73,7 +73,7 @@ body {
 .sp-btn {
   & > span {
     display: block;
-    background: $cWhite;
+    background: $white;
     width: 35px;
     height: 3px;
     margin-bottom: 8px;
@@ -106,7 +106,7 @@ body {
   }
 
   &__li {
-    color: $cWhite;
+    color: $white;
     font-size: $fontSize24;
     font-weight: bold;
     padding-bottom: $space40;
@@ -148,7 +148,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $cWhite;
+    color: $white;
     font-size: 30px;
 
     @include tablet {
@@ -173,7 +173,7 @@ body {
   }
 
   &__title {
-    color: $cWhite;
+    color: $white;
     font-size: $spTitle;
     padding-bottom: $space40;
 
@@ -184,7 +184,7 @@ body {
   }
 
   &__leade {
-    color: $cWhite;
+    color: $white;
     font-size: $fontSize24;
     padding-bottom: $space40;
 
@@ -195,11 +195,11 @@ body {
   }
 
   &__text {
-    color: $cWhite;
+    color: $white;
     padding-bottom: $space20;
 
     @include tablet {
-      color: $cWhite;
+      color: $white;
       padding-bottom: $space40;
     }
   }
@@ -354,7 +354,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: $cWhite;
+  color: $white;
 }
 
 .title {
@@ -407,7 +407,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 
 .footer {
   background-color: $cBlack;
-  color: $cWhite;
+  color: $white;
   text-align: center;
   padding-bottom: 5px;
 

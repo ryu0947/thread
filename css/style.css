@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 88px;
@@ -72,7 +76,7 @@ a {
   transform: none;
 }
 
-.detaile-btn a {
+.detaile-link.btn {
   width: 115px;
   margin-top: 20px;
 }

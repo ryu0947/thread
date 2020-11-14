@@ -1,6 +1,5 @@
 @import "breakpoint.scss";
 
-// ボタン
 .btn {
   display: inline-block;
   padding: 12px 88px;
@@ -36,7 +35,7 @@
   }
 
   &:hover {
-    color: $cWhite;
+    color: $white;
 
     &::before {
       transform: none;
@@ -44,38 +43,36 @@
   }
 }
 
-// recruitコンテンツ内のボタン
 .detaile-link {
-    & a {
+    &.btn {
         width: 115px;
         margin-top: $space20;
     }
 }
 
-// TOPへ戻るボタン
-.top-btn {
+.back-top-btn {
   position: fixed;
   bottom: 16%;
   right: 1%;
   width: 50px;
   height: 50px;
-  background-color: rgb(146, 145, 145);
+  background-color:#929191;
   border-radius: 50%;
 }
 
-.top-btn a {
+.back-top-btn a {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
 }
 
-.top-btn a::before {
+.back-top-btn a::before {
   font-family: "Font Awesome 5 Free";
   content: "\f106";
   font-weight: 900;
   font-size: 25px;
-  color: $cWhite;
+  color: $white;
   width: 25px;
   height: 25px;
   position: absolute;
