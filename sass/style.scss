@@ -288,6 +288,7 @@ body {
     }
 
     @include pc {
+      padding-top: 0;
       text-align: left;
     }
   }
