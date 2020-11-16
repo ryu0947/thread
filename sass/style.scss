@@ -163,13 +163,10 @@ body {
 }
 
 .philosophy {
-  height: 90vh;
+  height: 100vh;
+  max-height: 1000px;
   overflow: hidden;
   background: url(/images/message_bg.jpg) no-repeat center/cover;
-
-  @include pc {
-    height: 100vh;
-  }
 
   &__inner {
     @include container;

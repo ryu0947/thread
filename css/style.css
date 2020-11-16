@@ -275,15 +275,10 @@ body {
 }
 
 .philosophy {
-  height: 90vh;
+  height: 100vh;
+  max-height: 1000px;
   overflow: hidden;
   background: url(/images/message_bg.jpg) no-repeat center/cover;
-}
-
-@media screen and (min-width: 1024px) {
-  .philosophy {
-    height: 100vh;
-  }
 }
 
 .philosophy__inner {
