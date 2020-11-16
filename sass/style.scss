@@ -239,6 +239,11 @@ body {
   }
 
   &__thumb {
+
+    & a {
+      display: inline-block;
+    }
+
     @include pc {
       width: 645px;
       height: 430px;

@@ -367,6 +367,10 @@ body {
   }
 }
 
+.works__thumb a {
+  display: inline-block;
+}
+
 @media screen and (min-width: 1024px) {
   .works__thumb {
     width: 645px;
