@@ -531,23 +531,27 @@ body {
   text-align: center;
 }
 
+.contact__outer {
+  margin: 80px 0;
+}
+
 .contact__inner {
   padding: 80px 15px;
 }
 
 @media screen and (min-width: 768px) {
   .contact__inner {
-    padding: 80px;
+    padding: 80px 0;
   }
 }
 
 .contact__title {
   font-size: 40px;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .contact__text {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   line-height: 2;
 }
 

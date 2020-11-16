@@ -240,7 +240,7 @@ body {
   }
 
   &__thumb {
-
+    
     & a {
       display: inline-block;
     }
@@ -250,10 +250,10 @@ body {
       height: 430px;
       overflow: hidden;
 
-     & img {
+      & img {
         transition: transform 0.7s;
       }
-     & img:hover {
+      & img:hover {
         transform: scale(1.1);
         opacity: 0.9;
       }
@@ -389,20 +389,25 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   background-color: #f2f2f2;
   text-align: center;
 
+  &__outer {
+    margin: $space80 0;
+  }
+
   &__inner {
     padding: $space80 15px;
+
     @include tablet {
-      padding: $space80;
+      padding: $space80 0;
     }
   }
 
   &__title {
     font-size: $spTitle;
-    padding-bottom: $space80;
+    margin-bottom: $space80;
   }
 
   &__text {
-    padding-bottom: $space40;
+    margin-bottom: $space40;
     line-height: 2;
   }
   & br {
