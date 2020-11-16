@@ -154,10 +154,10 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: $white;
-    font-size: 30px;
+    font-size: $spTitle;
 
     @include tablet {
-      font-size: 48px;
+      font-size: $tab-pcTitle;
     }
   }
 }

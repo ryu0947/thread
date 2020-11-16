@@ -265,12 +265,12 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .fv__title {
-    font-size: 48px;
+    font-size: 64px;
   }
 }
 
