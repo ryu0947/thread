@@ -53,23 +53,23 @@ body {
     &:first-child {
       margin-left: 0;
     }
+  }
+  
+  & a {
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 7px;
 
-    & a {
-      color: $white;
-      font-weight: bold;
-      margin-bottom: 7px;
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 2px solid $white;
+      transition: all 0.3s;
+      width: 0;
+    }
 
-      &::after {
-        content: "";
-        display: block;
-        border-bottom: 2px solid $white;
-        transition: all 0.3s;
-        width: 0;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
+    &:hover::after {
+      width: 100%;
     }
   }
 }
