@@ -160,6 +160,10 @@ body {
   font-size: 18px;
 }
 
+.header__li:first-child {
+  margin-left: 0;
+}
+
 .header__li a {
   color: #ffffff;
   font-weight: bold;

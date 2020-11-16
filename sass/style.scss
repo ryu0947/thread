@@ -50,6 +50,10 @@ body {
     margin-left: 48px;
     font-size: 18px;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     & a {
       color: $white;
       font-weight: bold;
