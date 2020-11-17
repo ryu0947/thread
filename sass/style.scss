@@ -1,7 +1,4 @@
-@import "reset.scss";
-@import "variable.scss";
-@import "breakpoint.scss";
-@import "btn-style.scss";
+@import "components/**";
 
 // コンテンツの横幅
 @mixin container {
@@ -54,7 +51,7 @@ body {
       margin-left: 0;
     }
   }
-  
+
   & a {
     color: $white;
     font-weight: bold;

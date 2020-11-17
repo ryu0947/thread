@@ -4,6 +4,8 @@
 const gulp = require('gulp');
 // Sassをコンパイルするプラグインの読み込み
 const sass = require('gulp-sass');
+// 「gulp-sassglob」を読み込み
+const sassGlob = require('gulp-sass-glob');
 
 // style.scssの監視タスクを作成する
 gulp.task('default', function () {
@@ -13,6 +15,8 @@ gulp.task('default', function () {
 
     // style.scssファイルを取得
     return gulp.src('sass/style.scss')
+    //「sass」の前に指定
+      .pipe(sassGlob()) //
       // Sassのコンパイルを実行
       .pipe(sass({
         outputStyle: 'expanded'

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ryu0947/thread#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0"
   }
 }
