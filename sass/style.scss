@@ -1,4 +1,7 @@
-@import "components/**";
+@import "reset.scss";
+@import "variable.scss";
+@import "breakpoint.scss";
+@import "btn-style.scss";
 
 // コンテンツの横幅
 @mixin container {
@@ -393,7 +396,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
   &__inner {
     padding: $space80 15px;
 
-    @include tablet {
+    @include pc {
       padding: $space80 0;
     }
   }
