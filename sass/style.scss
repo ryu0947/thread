@@ -18,7 +18,7 @@ body {
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-.header {
+.header, .header-clone {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,6 +73,13 @@ body {
       width: 100%;
     }
   }
+}
+
+.header-clone.fixed {
+  position: fixed;
+  height: 60px;
+  background-color: #000;
+  opacity: 0.7;
 }
 
 .sp-btn {
