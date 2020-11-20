@@ -1,16 +1,16 @@
 $(function(){
-    const topbtn = $("#js-top-btn");
-    topbtn.hide();
+    const topBtn = $("#js-top-btn");
+    topBtn.hide();
 
     $(window).scroll(function(){
         if($(this).scrollTop() > 200) {
-            topbtn.fadeIn(300);
+            topBtn.fadeIn(300);
         } else {
-            topbtn.fadeOut();
+            topBtn.fadeOut();
         }
     });
 
-    topbtn.click(function(){
+    topBtn.click(function(){
         $("html").animate({scrollTop: 0}, 1000);
         return false;
     });
