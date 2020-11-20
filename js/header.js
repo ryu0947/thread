@@ -1,3 +1,3 @@
 $(function () {
-    const cloneHeader = $("#js-header").content().clone();
+    const cloneHeader = $("#js-header").contents().clone();
 });
