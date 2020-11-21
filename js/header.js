@@ -1,5 +1,9 @@
 $(function () {
-    const headerClone = $("#js-header").contents().clone();
-    const headerCloneContainer = $("<div class= 'header-clone fixed'></div>");
-    headerCloneContainer.append(headerClone).appendTo("body");
+    $(window).on("scroll", function() {
+      if($(this).scrollTop() > 700) {
+        $("#js-header").addClass("fixed");
+      } else {
+        $("#js-header").removeClass("fixed");
+      }
+    });
 });
