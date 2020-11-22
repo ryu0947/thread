@@ -18,6 +18,15 @@ body {
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+.scroll-animation {
+  opacity: 0;
+  transition: all 1.5s;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -159,9 +168,22 @@ body {
   position: relative;
   overflow: hidden;
 
+  @keyframes zoom-in {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   &__bg {
     height: 100vh;
     background: url(/images/fv.jpg) no-repeat center/cover;
+    animation: zoom-in 2s;
 
     &::before {
       content: "";
@@ -175,6 +197,17 @@ body {
     }
   }
 
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -35%);
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   &__title {
     position: absolute;
     top: 50%;
@@ -183,6 +216,8 @@ body {
     text-align: center;
     color: $white;
     font-size: $spTitle;
+    opacity: 0;
+    animation: fade-in 2s 2s forwards;
 
     @include tablet {
       font-size: $tab-pcTitle;
