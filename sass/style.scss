@@ -133,7 +133,7 @@ body {
   background-color: #000000;
   opacity: 0;
   transition: opacity 0.5s linear;
-  z-index: 50;
+  z-index: 10;
 
   &__nav {
     position: absolute;
@@ -217,7 +217,7 @@ body {
     color: $white;
     font-size: $spTitle;
     opacity: 0;
-    animation: fade-in 2s 2s forwards;
+    animation: fade-in 2s 1.7s forwards;
 
     @include tablet {
       font-size: $tab-pcTitle;
