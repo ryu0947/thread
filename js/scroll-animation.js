@@ -1,10 +1,10 @@
 $(function() {
 function scrollChk(){
-  var scroll = $(window).scrollTop();
-  var windowHeight = $(window).height();
+  const scroll = $(window).scrollTop();
+  const windowHeight = $(window).height();
 
     $('.scroll-animation').not('.show').each(function(){
-        var pos = $(this).offset().top;
+        const pos = $(this).offset().top;
 
         if (scroll > pos - windowHeight){
             $(this).addClass("show");
