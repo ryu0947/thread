@@ -14,7 +14,4 @@ function scrollChk(){
 $(window).scroll(function (){
     scrollChk();
 });
-$('body').on('touchmove', function() {
-    scrollChk();
-});
 });
