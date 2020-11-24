@@ -6,12 +6,12 @@ function scrollChk(){
     $('.scroll-animation').not('.show').each(function(){
         const pos = $(this).offset().top;
 
-        if (scroll > pos - windowHeight){
+        if (scroll > pos - windowHeight / 2){
             $(this).addClass("show");
         }
     });
 }
-$(window).scroll(function (){
+$(window).on("scroll", function (){
     scrollChk();
 });
 });
