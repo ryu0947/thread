@@ -91,16 +91,18 @@ body {
 }
 
 .sp-btn {
-  & > span {
-    position: relative;
+  &__item {
     display: block;
-    background: $white;
+    background-color: $white;
     width: 35px;
     height: 3px;
     margin-bottom: 8px;
     transition: all 0.5s;
 
     &.active {
+      position: relative;
+      transition: all 0.5s;
+
       &:nth-child(1) {
         top: 12px;
         transform: rotate(45deg);
@@ -113,10 +115,10 @@ body {
         transform: rotate(-45deg);
       }
     }
-  }
 
-  & > span:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include tablet {
