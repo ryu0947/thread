@@ -1,12 +1,11 @@
 $(function(){
     const topBtn = $("#js-top-btn");
-    topBtn.hide();
 
     $(window).on("scroll", function(){
         if($(this).scrollTop() > 200) {
-            topBtn.fadeIn(300);
+            topBtn.addClass('show');
         } else {
-            topBtn.fadeOut();
+            topBtn.removeClass('show');
         }
     });
 
