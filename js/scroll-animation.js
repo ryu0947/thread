@@ -1,17 +1,15 @@
-$(function() {
-function scrollChk(){
-  const scroll = $(window).scrollTop();
-  const windowHeight = $(window).height();
+$(function(){
+    $(window).on("scroll", function() {
+        const trigger = $(".js-trigger");
 
-    $('.scroll-animation').not('.show').each(function(){
-        const pos = $(this).offset().top;
+      $(trigger).each(function(){
+        let scroll = $(window).scrollTop();
+        let windowHeight = $(window).height();
+        let triggerTop =  $(this).offset().top;
 
-        if (scroll > pos - windowHeight / 2){
-            $(this).addClass("show");
-        }
+      if(scroll > triggerTop - windowHeight / 2) {
+        $(this).addClass("show");
+      }
+      });
     });
-}
-$(window).on("scroll", function (){
-    scrollChk();
-});
-});
+})
