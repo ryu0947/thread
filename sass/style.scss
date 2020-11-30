@@ -20,7 +20,7 @@ body {
 
 .scroll-animation {
   opacity: 0;
-  transition: all 1.2s;
+  transition: all 1s;
 
   &.show {
     opacity: 1;
