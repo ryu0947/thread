@@ -347,7 +347,7 @@ body {
   height: 100vh;
   max-height: 1000px;
   overflow: hidden;
-  background: url(/images/message_bg.jpg) no-repeat center/cover;
+  background: url(../images/message_bg.jpg) no-repeat center/cover;
 }
 
 .philosophy__inner {
@@ -550,19 +550,19 @@ body {
 }
 
 .tokyo {
-  background: url(/images/office_tokyo.jpg) no-repeat center/cover;
+  background: url(../images/office_tokyo.jpg) no-repeat center/cover;
 }
 
 .osaka {
-  background: url(/images/office_osaka.jpg) no-repeat center/cover;
+  background: url(../images/office_osaka.jpg) no-repeat center/cover;
 }
 
 .nagoya {
-  background: url(/images/office_nagoya.jpg) no-repeat center/cover;
+  background: url(../images/office_nagoya.jpg) no-repeat center/cover;
 }
 
 .fukuoka {
-  background: url(/images/office_fukuoka.jpg) no-repeat center/cover;
+  background: url(../images/office_fukuoka.jpg) no-repeat center/cover;
 }
 
 .lead {

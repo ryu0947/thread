@@ -229,7 +229,7 @@ body {
   height: 100vh;
   max-height: 1000px;
   overflow: hidden;
-  background: url(/images/message_bg.jpg) no-repeat center/cover;
+  background: url(../images/message_bg.jpg) no-repeat center/cover;
 
   &__inner {
     @include container;
@@ -415,7 +415,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 
 @each $name in $nameList {
   .#{$name} {
-    background: url(/images/office_#{$name}.jpg) no-repeat center/cover;
+    background: url(../images/office_#{$name}.jpg) no-repeat center/cover;
   }
 }
 
