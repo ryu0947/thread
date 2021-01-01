@@ -300,7 +300,7 @@ body {
 
 .fv__bg {
   height: 100vh;
-  background: url(/images/fv.jpg) no-repeat center/cover;
+  background: url(../images/fv.jpg) no-repeat center/cover;
   animation: zoom-in 2s;
 }
 
