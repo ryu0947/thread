@@ -29,6 +29,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: none;
+  border: none;
+  appearance: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 address {
   font-style: normal;
 }
