@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
   const target = $(".js-trigger");
   $(window).scroll(
     $.throttle(250, function () {
@@ -13,4 +13,4 @@ $(function(){
       });
     })
   );
-})
+});
