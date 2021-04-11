@@ -101,7 +101,6 @@ body {
       transform: translateY(0px);
       background-color: rgba($color: #000000, $alpha: 0.7);
     }
-    
   }
 }
 
@@ -146,6 +145,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #000000;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s linear;
   z-index: 10;
@@ -171,6 +171,7 @@ body {
   }
 
   &.show {
+    visibility: visible;
     opacity: 1;
   }
 
@@ -184,12 +185,12 @@ body {
   overflow: hidden;
 
   @keyframes zoom-in {
-    0% {
+    from {
       opacity: 0;
       transform: scale(1.1);
     }
 
-    100% {
+    to {
       opacity: 1;
       transform: scale(1);
     }
@@ -212,17 +213,6 @@ body {
     }
   }
 
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -35%);
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
   &__title {
     position: absolute;
     top: 50%;
@@ -238,18 +228,29 @@ body {
       font-size: $tab-pcTitle;
     }
   }
+
+  @keyframes fade-in {
+    form {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .philosophy {
   height: 100vh;
-  max-height: 1000px;
-  overflow: hidden;
   background: url(../images/message_bg.jpg) no-repeat center/cover;
 
   &__inner {
     @include container;
-    padding-top: $space80;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    height: inherit;
   }
 
   &__title {
