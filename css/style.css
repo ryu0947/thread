@@ -155,7 +155,6 @@ body {
   height: 60px;
   z-index: 100;
   transition: all 0.8s ease-in-out;
-  opacity: 0.8;
 }
 
 .header__inner {
@@ -211,7 +210,20 @@ body {
 
 .header.fixed {
   position: fixed;
-  background-color: #000;
+  animation: fixed 1s ease forwards;
+}
+
+@keyframes fixed {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+    background-color: none;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 .sp-menu-btn__item {
