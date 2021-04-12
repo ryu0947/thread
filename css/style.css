@@ -32,6 +32,7 @@ a {
 button {
   background: none;
   border: none;
+  outline: none;
   appearance: none;
   padding: 0;
   cursor: pointer;
