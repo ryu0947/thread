@@ -70,9 +70,7 @@ body {
     position: relative;
     color: $white;
     font-weight: bold;
-    margin-bottom: 8px;
 
-    &::before,
     &::after {
       content: "";
       position: absolute;

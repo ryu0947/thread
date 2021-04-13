@@ -195,10 +195,9 @@ body {
   position: relative;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 8px;
 }
 
-.header a::before, .header a::after {
+.header a::after {
   content: "";
   position: absolute;
   left: 0;
