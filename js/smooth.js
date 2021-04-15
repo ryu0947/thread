@@ -4,7 +4,7 @@ $(function () {
     e.preventDefault();
     const href = $(this).attr("href");
     if (href === "#") {
-      target = $("html");
+      target = $("");
     } else {
       target = $(href);
     }
