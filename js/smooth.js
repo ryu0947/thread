@@ -8,8 +8,8 @@ $("a[href^='#']").click(function (e) {
   } else {
     target = $(href);
   }
-  const position = target.offset().top;
   const getHeight = $("#js-header").outerHeight();
-  $("body,html").animate({ scrollTop: position - getHeight }, 600, "swing");
+  const position = target.offset().top - getHeight;
+  $("body,html").animate({ scrollTop: position }, 600, "swing");
   return false;
 });
