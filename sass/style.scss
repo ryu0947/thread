@@ -14,7 +14,7 @@ body {
   color: $black;
   font-size: 16px;
   letter-spacing: 0.1em;
-  background-color: $white;
+  background: $white;
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
@@ -99,13 +99,13 @@ body {
     from {
       opacity: 0;
       transform: translateY(-30px);
-      background-color: none;
+      background: none;
     }
 
     to {
       opacity: 1;
       transform: translateY(0px);
-      background-color: rgba($color: #000000, $alpha: 0.7);
+      background: rgba($color: #000000, $alpha: 0.7);
     }
   }
 }
@@ -114,7 +114,7 @@ body {
   &__item {
     position: relative;
     display: block;
-    background-color: $white;
+    background: $white;
     width: 35px;
     height: 3px;
     margin-bottom: 8px;
@@ -150,7 +150,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background: #000000;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s linear, visibility 0.5s linear;
@@ -214,7 +214,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #000;
+      background: #000000;
       opacity: 0.6;
     }
   }
@@ -294,7 +294,7 @@ body {
 
 .works {
   text-align: center;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
 
   &__inner {
     padding: $space80 $space20;
@@ -429,7 +429,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background: #000000;
   opacity: 0.6;
 }
 
@@ -470,7 +470,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 }
 
 .contact {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   text-align: center;
 
   &__outer {
@@ -504,7 +504,7 @@ $nameList: tokyo, osaka, nagoya, fukuoka;
 }
 
 .footer {
-  background-color: $black;
+  background: $black;
   color: $white;
   text-align: center;
   padding-bottom: 5px;

@@ -64,7 +64,7 @@ address {
   width: 100%;
   height: 100%;
   transform: translateX(-100%);
-  background-color: #333333;
+  background: #333333;
   transition: transform 0.3s;
   z-index: -1;
 }
@@ -74,7 +74,7 @@ address {
 }
 
 .btn.filled:hover {
-  background-color: #333333;
+  background: #333333;
 }
 
 .btn:hover {
@@ -96,9 +96,9 @@ address {
   right: 1.5%;
   width: 50px;
   height: 50px;
-  background-color: #929191;
+  background: #929191;
   border-radius: 50%;
-  z-index: 50;
+  z-index: 5;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -107,14 +107,14 @@ address {
   opacity: 1;
 }
 
-.back-top-btn a {
+.back-top-btn span {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
 }
 
-.back-top-btn a::before {
+.back-top-btn span::before {
   font-family: "Font Awesome 5 Free";
   content: "\f106";
   font-weight: 900;
@@ -135,7 +135,7 @@ body {
   color: #333333;
   font-size: 16px;
   letter-spacing: 0.1em;
-  background-color: #ffffff;
+  background: #ffffff;
   font-family: YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
@@ -224,19 +224,19 @@ body {
   from {
     opacity: 0;
     transform: translateY(-30px);
-    background-color: none;
+    background: none;
   }
   to {
     opacity: 1;
     transform: translateY(0px);
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
 .sp-menu-btn__item {
   position: relative;
   display: block;
-  background-color: #ffffff;
+  background: #ffffff;
   width: 35px;
   height: 3px;
   margin-bottom: 8px;
@@ -273,7 +273,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background: #000000;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s linear, visibility 0.5s linear;
@@ -340,7 +340,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background: #000000;
   opacity: 0.6;
 }
 
@@ -426,7 +426,7 @@ body {
 
 .works {
   text-align: center;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
 }
 
 .works__inner {
@@ -574,7 +574,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background: #000000;
   opacity: 0.6;
 }
 
@@ -625,7 +625,7 @@ body {
 }
 
 .contact {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   text-align: center;
 }
 
@@ -664,7 +664,7 @@ body {
 }
 
 .footer {
-  background-color: #333333;
+  background: #333333;
   color: #ffffff;
   text-align: center;
   padding-bottom: 5px;
