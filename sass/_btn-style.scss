@@ -66,12 +66,6 @@
     opacity: 1;
   }
 
-  & span {
-    display: block;
-    position: relative;
-    width: 50px;
-    height: 50px;
-
     &::before {
       font-family: "Font Awesome 5 Free";
       content: "\f106";
@@ -84,8 +78,7 @@
       top: 0;
       left: 0;
       bottom: 0;
-      right: -3px;
+      right: 0;
       margin: auto;
     }
   }
-}
